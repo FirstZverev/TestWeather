@@ -47,7 +47,7 @@ class WeatherCell: UITableViewCell {
         self.city = city
         
         let temprature = UILabel()
-        temprature.font = UIFont(name:"Avenir-Medium", size: 50)
+        temprature.font = UIFont(name:"Avenir-Medium", size: 60)
         temprature.textAlignment = .left
         temprature.translatesAutoresizingMaskIntoConstraints = false
         temprature.numberOfLines = 0
@@ -74,7 +74,7 @@ class WeatherCell: UITableViewCell {
             self.city!.topAnchor.constraint(equalTo: self.content!.topAnchor, constant: 20),
             self.city!.trailingAnchor.constraint(equalTo: self.content!.trailingAnchor, constant: -20),
 
-            self.temprature!.leadingAnchor.constraint(equalTo: self.content!.leadingAnchor, constant: 20),
+            self.temprature!.leadingAnchor.constraint(equalTo: self.content!.leadingAnchor, constant: 30),
             self.temprature!.topAnchor.constraint(equalTo: self.city!.bottomAnchor, constant: 20),
 
             self.state!.leadingAnchor.constraint(equalTo: self.temprature!.trailingAnchor, constant: 20),
